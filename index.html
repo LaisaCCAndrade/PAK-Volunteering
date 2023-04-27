@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,6 +15,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/globalstyled.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
@@ -39,19 +41,26 @@
       </div>
       <div class="menu" id="itens" onclick="clickMenu()">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#topics">Lyle's Topics</a></li>
-          <li><a href="#media">Media Appearances</a></li>
-          <li><a href="#press">Press Kit</a></li>
-          <li><a href="#author">Author</a></li>
-          <li><a href="#speaker">Speaker</a></li>
-          <li><a href="#supporters">Supporters</a></li>
-          <li><a href="#educator">Educator</a></li>
-          <li><a href="#entrepreneur">Entrepreneur</a></li>
-          <li>
+          <li class="list"><a href="#home">Home</a></li>
+          <li class="list"><a href="#contact">Contact</a></li>
+          <li class="list"><span class="material-icons">
+            person
+            </span><a href="#about">About</a></li>
+          <li class="list"><i class="fa-solid fa-camera fas" style="color: #7e8890;"></i><a href="#gallery">Gallery</a></li>
+          <li class="list"><img class="grafic" src="./src/assets/grafico-de-barras.png"><a href="#topics">Lyle's Topics</a></li>
+          <li class="list"><i class="fa-solid fa-newspaper fas" style="color: #7e8890;"></i><a href="#media">Media Appearances</a></li>
+          <li class="list"><span class="material-icons">
+            cloud_download
+            </span><a href="#press">Press Kit</a></li>
+          <li class="list"><i class="fa-solid fa-book-open fas" style="color: #7e8890;"></i><a href="#author">Author</a></li>
+          <li class="list"><i class="fa-solid fa-microphone-alt fas" style="color: #7e8890;"></i><a href="#speaker">Speaker</a></li>
+          <li class="list"><i class="fa-solid fa-hand-holding-usd fas" style="color: #7e8890;"></i><a href="#supporters">Supporters</a></li>
+          <li class="list"><i class="fas fa-chalkboard-teacher" style="color: #7e8890;"></i><a href="#educator">Educator</a></li>
+          <li class="list"><i class="fa-solid fa-user-tie fas" style="color: #7e8890;"></i><a href="#entrepreneur">Entrepreneur</a></li>
+          <li class="list">
+            <span class="material-icons">
+              phone
+              </span>
             <a href="#contact">Contact</a>
           </li>
         </ul>
@@ -65,280 +74,9 @@
         </section>
         <div class="family"></div>
       </div>
-      <section id="gallery" class="gallery">
-        <!-- <div class="gallery--div">
-                <h2 class="title2">GALLERY</h2>
-                <h3 class="subtitle">
-                WE DO WHAT WE DO — ALL OVER THE WORLD — FOR PEOPLE JUST LIKE THESE.
-                </h3>
-                <p class="gallery-p">
-                Providing Quality of Life Programs that Work for the Betterment of
-                Kids, People & The Planet regardless of Race, Nationality, Religion,
-                Age, Gender, Education or Income.
-                </p>
-                <div class="carousel">
-                <button class="carousel--button"><</button>
-                <ul class="carousel--ul">
-                <li>
-                    <img
-                    src="./src/assets/20190426_155243_HDR-800x600-1-200x150.jpg"
-                    alt=""
-                    />
-                </li>
-                <li>
-                    <img src="./src/assets/IMG_9153-800x600-1-200x150.jpg" alt="" />
-                </li>
-                <li>
-                    <img
-                    src="./src/assets/20190427_155516_HDR-800x600-1-200x150.jpg"
-                    alt=""
-                    />
-                </li>
-                <li>
-                    <img src="./src/assets/IMG_1116-800x600-1-200x150.jpg" alt="" />
-                </li>
-                <li>
-                    <img src="./src/assets/IMG_1122-800x600-1-200x150.jpg" alt="" />
-                </li>
-                <li>
-                    <img src="./src/assets/IMG_9149-800x600-1-200x150.jpg" alt="" />
-                </li>
-                <li>
-                    <img src="./src/assets/IMG_1181-800x600-1-200x150.jpg" alt="" />
-                </li>
-                </ul>
-                <button class="carousel--button-left">></button>
-            </div> -->
-      </section>
-      <!-- <section class="topics">
-        <div id="topics" class="topics--div">
-          <h2 class="title2">LYLE’S TOPICS</h2>
-          <h3 class="subtitle">MY MESSAGE TO THE MEDIA.</h3>
-          <p class="topics--p">
-            Whether <strong>the purpose of your journalism</strong> is to
-            inform, report, influence, persuade or entertain, I propose that
-            there is a critical need for the people and institutions with the
-            power to reach the masses add-in a crucial element of Social
-            Responsibility into their media.
-          </p>
-          <p class="topics--p">
-            <strong>The simple reason is this:</strong> The world is in crisis
-            and this decade will determine quality of life for billions of
-            people on the planet. Whatever new disaster that is unfolding in
-            front of you, you have several choices: 1) report on it and move on;
-            2) ignore it because it doesn’t fall in your sphere; and 3) report,
-            update and share more content involving this subject.
-          </p>
-          <p class="topics--p">
-            The limitation with these approaches is that we are at a time when
-            we can no longer afford any delays in pushing back the tipping point
-            issues — climate change, pollution, pandemics, war, and social,
-            economic and health issues — the people and institutions with the
-            power to do something about it are doing nothing at worst, or at
-            best a fraction of what they could and should be doing.
-          </p>
-          <p class="topics--p strong">
-            <strong>The Time for Global Citizenship is Now</strong>
-          </p>
-          <p class="topics--p">
-            Whatever the method, objective or audience of your communication and
-            media I propose a fourth choice: A “One Planet One People” tie-in
-            where you can:
-          </p>
-          <ul class="topics--ul">
-            <li>
-              add the “One Planet One People” seal in the bottom corner of your
-              broadcasts
-            </li>
-            <li>
-              automatically “Host & Post” the daily Planned Acts of Kindness on
-              your website, newspaper, magazine, bulletin, etc.
-            </li>
-            <li>
-              add a program logo and link at the end of your media messages
-            </li>
-            <li>add a call-to-action campaign</li>
-            <li>
-              talk with me about developing a custom approach specific for your
-              objectives
-            </li>
-          </ul>
-          <p class="topics--p">
-            In addition to your audience, the benefits to you and your
-            organization are enormous. By your association and support of our
-            NPO’s Quality of Life Mission, your voice and reach will be
-            amplified through positive CRS, HR, PR, Branding and Revenue.
-          </p>
-          <p class="topics--p">
-            When the survival of the human race depends on it, it is imperative
-            that we give <u>all</u> audiences the opportunity to make choices as
-            well. For its only by working together can we succeed.
-          </p>
-          <p class="topics--p">
-            So, please ask yourself these questions: Would this be worth doing
-            if it adds to people’s Quality of Life on a local, national, or
-            global scale? Would it be worth doing if it extends the time you
-            have to do what you love for the people you care about?
-          </p>
-          <p class="topics--p strong">
-            <strong>The Time to Step-Up & “Be The Hero” is Now</strong>
-          </p>
-          <p class="topics--p">
-            Please give me the opportunity to connect with your humanity and
-            your audience, and I will give you a show that brings out the
-            passion in your people. With that connection, we may certainly find
-            others that can join the cause and make a planetary difference in
-            the lives of others.
-          </p>
-          <p class="topics--p">
-            It will only happen because you stepped outside your comfort zone.
-            So, I thank you in advance and I look forward to our collaboration.
-            Thank you.
-          </p>
-          <p class="topics--p strong"><strong>Lyle Benjamin</strong></p>
-
-          <div class="button-default-a">
-            <a href="https://www.lylebenjamin.com/headlines/"
-              >RELEVANT HEADLINES IN THE NEWS</a
-            >
-          </div>
-          <div class="grafics">
-            <span>KINDNESS, CIVILITY & QUALITY OF LIFE</span>
-            <span>100%</span>
-            <div><button></button></div>
-          </div>
-          <div class="grafics">
-            <span>SOCIAL, ECONOMIC & HEALTH INEQUALITY REFORMS</span>
-            <span>92%</span>
-            <div><button></button></div>
-          </div>
-          <div class="grafics">
-            <span>SOLUTIONS TO THE TIPPING POINT ISSUES</span>
-            <span>96%</span>
-            <div><button></button></div>
-          </div>
-          <div class="grafics">
-            <span>SOLVING SUSTAINABILITY & THE UN 17 SDGs</span>
-            <span>94%</span>
-            <div><button></button></div>
-          </div>
-          <div class="grafics">
-            <span
-              >SOURCING GAME-CHANGING SUSTAINABLE & GREEN PRODUCTS, SERVICES &
-              GOODS
-            </span>
-            <span>88%</span>
-            <div><button></button></div>
-          </div>
-          <div class="grafics">
-            <span>CREATING WORK/LIFE BALANCE</span>
-            <span>96%</span>
-            <div><button></button></div>
-          </div>
-          <div class="grafics">
-            <span>GROUNDBREAKING MENTORSHIP & LEADERSHIP TRAINING</span>
-            <span>92%</span>
-            <div><button></button></div>
-          </div>
-          <div class="grafics">
-            <span>BOOSTING CSR, HR, PR, BRANDING, REVENUE & ROI</span>
-            <span>98%</span>
-            <div><button></button></div>
-          </div>
-          <p class="topics--p strong">
-            <strong>QUALITY OF LIFE FOR ALL.</strong>
-          </p>
-          <div class="about--a">
-            <a href="https://www.lylebenjamin.com/programs/">PROGRAMS</a>
-            <a href="https://www.lylebenjamin.com/expertise-page/">EXPERTISE</a>
-            <a href="https://www.lylebenjamin.com/testimonials/"
-              >TESTIMONIALS</a
-            >
-          </div>
-        </div>
-        <div>
-          <h5>The Importance of Embracing Change Culture & Collaboration</h5>
-          <p><strong>Open Letter: </strong></p>
-          <p>
-            This letter took me ten years to write, but nothing worthwhile is
-            ever really easy. It takes effort. Reading this will only take about
-            2-minutes of your time, but it still won’t be easy.
-          </p>
-          <p>
-            Understanding the systems created to solve pressing social problems
-            on a large scale isn’t easy. And going from understanding to action
-            to help solve these issues is even harder.
-          </p>
-          <p>
-            The biggest obstacle to us ever being really successful is that we
-            use a fractional approach to solving global social issues. It hasn’t
-            worked in the past, it’s not working today, and it won’t work in the
-            future.
-          </p>
-          <p>
-            Look no further than our response to the pandemic, and you’ll see
-            what I mean. And that’s how we’re trying to solve the other tipping
-            point issues of climate change, pollution, overpopulation, war, and
-            terrorism.
-          </p>
-          <p>
-            The fractional approach won’t work with these issues as well. The
-            world will be exposed to the same deadly consequences as it has from
-            COVID-19 … loss of quality of life for billions of people that
-            results in poverty, starvation, sickness, and death.
-          </p>
-          <p>
-            My name is Lyle Benjamin, and I’ve spent the last ten years
-            developing social responsibility systems that are designed to work
-            from the grassroots up by engaging individuals on a collective basis
-            to the top-down by working with institutions.
-          </p>
-          <p>
-            Planned Acts of Kindness and One Planet One People are built on the
-            principles of collaboration, and our programs and initiatives are
-            fully aligned with the United Nations’ 17 SDGs (Sustainable
-            Development Goals) of 2030.
-          </p>
-          <p>
-            Only by working together will we have a chance of pushing back
-            against the tipping points that will end the quality of life on this
-            planet.
-          </p>
-          <p>
-            Do you have an open mind where we can work together on solving these
-            problems?
-          </p>
-          <p>
-            Do you have “The Right Stuff?” There are five qualities and
-            characteristics — desire, determination, willingness to learn,
-            willingness to take action, and commitment to put in both time &
-            effort — you need to develop to move from being an ordinary
-            individual into someone who really wants to be an influencer/hero
-            and make things happen in a big way.
-          </p>
-          <p>
-            Are you frustrated enough, are you upset enough, are you scared
-            enough about our future, that you’re ready to go down a different
-            path?
-          </p>
-          <p>
-            Are you ready to make a difference? Are you ready to “Be The Hero”?
-            If you are, then all you have to do is take that first step: Decide
-            to collaborate and contact me.
-          </p>
-          <p>
-            We’re all in this together. One Planet One People. Let’s make it
-            happen.
-          </p>
-          <p>Stay safe. Stay well.</p>
-          <p>
-            Lyle Benjamin Planned Acts of Kindness One Planet One People 212
-            213-0257
-          </p>
-          <a href="mailto:Support@PlannedActs.Org">Support@PlannedActs.Org</a>
-        </div>
-      </section>
-      <section id="media">
+      <section id="gallery" class="gallery"></section>
+      <section class="topics"></section>
+      <!-- <section id="media">
         <h2>MEDIA APPEARANCES</h2>
         <h3>OUTREACH, ENGAGEMENT, EDUCATION, INSPIRATION & ACTION</h3>
         <p>
@@ -946,7 +684,7 @@
         <div>
           <a href="https://twitter.com/PlannedActs">f</a>
         </div>
-      </section> -->
+      </section> --> 
     </main>
   </body>
 </html>
