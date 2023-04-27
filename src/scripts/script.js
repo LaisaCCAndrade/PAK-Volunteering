@@ -264,52 +264,52 @@ function renderGallery() {
 
   let ul = document.createElement("div");
   ul.classList.add("carousel--ul");
-  ul.classList.add("carousel-wrapper")
+  ul.classList.add("carousel-wrapper");
   ul.setAttribute("id", "img");
 
   let img = document.createElement("img");
   img.classList.add("item");
   img.classList.add("current-item");
-  img.setAttribute("id", "slide1")
+  img.setAttribute("id", "slide1");
   img.src = "./src/assets/20190426_155243_HDR-800x600-1-200x150.jpg";
 
   let img2 = document.createElement("img");
   img2.classList.add("item");
   img2.classList.add("current-item");
-  img2.setAttribute("id", "slide2")
+  img2.setAttribute("id", "slide2");
   img2.src = "./src/assets/IMG_9153-800x600-1-200x150.jpg";
 
   let img3 = document.createElement("img");
   img3.classList.add("item");
   img3.classList.add("current-item");
-  img3.setAttribute("id", "slide3")
+  img3.setAttribute("id", "slide3");
   img3.src = "./src/assets/20190427_155516_HDR-800x600-1-200x150.jpg";
 
   let img4 = document.createElement("img");
   img4.classList.add("item");
   img4.classList.add("current-item");
-  img4.setAttribute("id", "slide4")
+  img4.setAttribute("id", "slide4");
   img4.src = "./src/assets/IMG_1116-800x600-1-200x150.jpg";
 
   let img5 = document.createElement("img");
   img5.classList.add("item");
   img5.classList.add("current-item");
-  img5.setAttribute("id", "slide5")
+  img5.setAttribute("id", "slide5");
   img5.src = "./src/assets/IMG_1122-800x600-1-200x150.jpg";
 
   let img6 = document.createElement("img");
   img6.classList.add("item");
   img6.classList.add("current-item");
-  img6.setAttribute("id", "slide6")
+  img6.setAttribute("id", "slide6");
   img6.src = "./src/assets/IMG_9149-800x600-1-200x150.jpg";
 
   let img7 = document.createElement("img");
   img7.classList.add("item");
   img7.classList.add("current-item");
-  img7.setAttribute("id", "slide7")
+  img7.setAttribute("id", "slide7");
   img7.src = "./src/assets/IMG_1181-800x600-1-200x150.jpg";
-  
-  ul.append(img, img2, img3,img4, img5, img6, img7);
+
+  ul.append(img, img2, img3, img4, img5, img6, img7);
   div2.append(button, ul, button2);
   div.append(h2, h3, p, div2);
   section.append(div);
@@ -346,8 +346,8 @@ function renderGallery() {
     });
   });
 
-  const imagens = document.querySelectorAll(".carousel-wrapper img")
-  imagens.forEach(img => {
+  const imagens = document.querySelectorAll(".carousel-wrapper img");
+  imagens.forEach((img) => {
     img.addEventListener("click", () => {
       const modal = `
         <div class="modal fade">
@@ -372,19 +372,23 @@ function renderGallery() {
             </div>
           </div>
         </div>
-      `
-      const modalElement = document.createElement("div")
-      modalElement.innerHTML = modal
-      document.body.appendChild(modalElement)
+      `;
+      const modalElement = document.createElement("div");
+      modalElement.innerHTML = modal;
+      document.body.appendChild(modalElement);
 
-      const modalInstance = new bootstrap.Modal(modalElement.querySelector(".modal"))
-      modalInstance.show()
+      const modalInstance = new bootstrap.Modal(
+        modalElement.querySelector(".modal")
+      );
+      modalInstance.show();
 
-      modalElement.querySelector(".modal").addEventListener("hidden.bs.modal", () =>{
-        document.body.removeChild(modalElement)
-      })
-    })
-  })
+      modalElement
+        .querySelector(".modal")
+        .addEventListener("hidden.bs.modal", () => {
+          document.body.removeChild(modalElement);
+        });
+    });
+  });
 
   return section;
 }
