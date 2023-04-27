@@ -824,6 +824,11 @@ main {
   .importance {
     width: 60%;
     margin-right: -55px;
+    height: 3000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .topics {
@@ -838,9 +843,17 @@ main {
     height: 160px;
   }
 
+  .about{
+    margin-left: 85px;
+  }
+
   .home {
     margin-left: 260px;
     max-width: 100vw;
+  }
+
+  .topics--div{
+    margin-left: 275px;
   }
 
   .globals {
@@ -905,7 +918,7 @@ main {
   }
 
   .topics--div{
-    margin-left: 310px;
+    margin-left: 273px;
   }
 
   .gallery {
@@ -927,7 +940,7 @@ main {
   }
 
   .importance{
-    height: 100%;
+    height: 3000px;
   }
 }
 
