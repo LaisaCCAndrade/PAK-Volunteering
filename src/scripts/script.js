@@ -6,24 +6,6 @@ function clickMenu() {
   }
 }
 
-// const swiper = new Swiper('.swiper-container', {
-//   slidesPerView: 3,
-//   spaceBetween: 30,
-//   centeredSlides: true,
-//   autoplay: {
-//     delay: 2500,
-//     disableOnInteraction: false,
-//   },
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-// });
-
 function renderHome() {
   let div = document.createElement("div");
   div.classList.add("home");
@@ -66,7 +48,7 @@ function renderHome() {
   div4.classList.add("qr-code");
 
   let img = document.createElement("img");
-  img.src = "../src/assets/PAK-APP-QR-CODE-T-150x150.jpg";
+  img.src = "./src/assets/PAK-APP-QR-CODE-T-150x150.jpg";
 
   let p2 = document.createElement("p");
   p2.innerText = "Get the PAK APP!";
