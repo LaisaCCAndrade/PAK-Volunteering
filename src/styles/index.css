@@ -7,10 +7,6 @@ main {
   margin: 0;
 }
 
-.material-icons {
-  color: var(--color5);
-}
-
 .header {
   background-color: var(--color8);
 }
@@ -163,6 +159,9 @@ input:checked ~ label .line::after {
   color: var(--color);
   font-size: 15px;
   font-family: var(--font-family1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .home {
